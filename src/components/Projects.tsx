@@ -9,22 +9,16 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Personal Portfolio',
-    description: 'A modern, responsive portfolio website built with React and Vite to showcase my learning journey.',
-    tags: ['React', 'TypeScript', 'CSS'],
-    link: '#',
+    title: 'Dev Portfolio',
+    description: 'A modern, responsive portfolio website built with React and Vite to showcase my learning journey and projects.',
+    tags: ['React', 'TypeScript', 'Vite', 'CSS'],
+    link: 'https://github.com/0xmattyiceee/dev-portfolio',
   },
   {
-    title: 'AI Task Tracker',
-    description: 'A simple task management application featuring basic AI-powered task suggestions.',
-    tags: ['JavaScript', 'HTML', 'CSS', 'AI API'],
-    link: '#',
-  },
-  {
-    title: 'Interactive Quiz App',
-    description: 'A dynamic quiz application designed to test knowledge on web development fundamentals.',
-    tags: ['TypeScript', 'Vite', 'React'],
-    link: '#',
+    title: 'Digital Business Card',
+    description: 'A sleek, interactive digital business card designed for modern networking and professional branding.',
+    tags: ['React', 'CSS', 'JavaScript'],
+    link: 'https://0xmattyiceee.github.io/digital-identity-card/',
   },
 ];
 
