@@ -20,6 +20,12 @@ const projects: Project[] = [
     tags: ['React', 'CSS', 'JavaScript'],
     link: 'https://0xmattyiceee.github.io/digital-identity-card/',
   },
+  {
+    title: 'WolfeePackk Team Website',
+    description: 'A dedicated team website for WolfeePackk, featuring gaming content, schedules, and community engagement.',
+    tags: ['React', 'CSS', 'JavaScript'],
+    link: 'https://0xmattyiceee.github.io/wolfeepackk_temprgg/',
+  },
 ];
 
 const Projects = () => {
