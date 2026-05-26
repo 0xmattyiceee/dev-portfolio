@@ -9,6 +9,12 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'IBM Z Xplore Mainframe Workspace',
+    description: 'An enterprise mainframe workspace demonstrating live z/OS mainframe integrations, Assembler Fibonacci algorithms, and automated USS system linklists using ZOAU Python APIs.',
+    tags: ['Mainframe', 'z/OS', 'Python', 'JCL', 'Assembler', 'Zowe CLI'],
+    link: 'https://github.com/0xmattyiceee/zxplore',
+  },
+  {
     title: 'Dev Portfolio',
     description: 'A modern, responsive portfolio website built with React and Vite to showcase my learning journey and projects.',
     tags: ['React', 'TypeScript', 'Vite', 'CSS'],
