@@ -11,15 +11,15 @@ Solana Mobile portfolio that positions the owner as a developer on a mission to
 build dApps for the **Solana Seeker** and the **Solana dApp Store**.
 
 The portfolio is **forward-looking / building-in-public**: the owner is starting
-from zero on Solana. It declares intent, tells the mainframe→Web3 origin story,
-and reframes existing real projects as proof of shipping ability. No Solana
-projects, credentials, or metrics are fabricated.
+from zero on Solana. It declares intent, communicates a genuine drive to build
+for Solana mobile, and reframes existing real projects as proof of shipping
+ability. No Solana projects, credentials, or metrics are fabricated.
 
 ## Audience & Positioning
 
 - **Audience:** mixed (recruiters, potential collaborators, Solana peers). Because
-  it can't over-optimize for one, it leads with what is *distinctive*: a low-level
-  systems / mainframe developer going full Solana mobile.
+  it can't over-optimize for one, it leads with a clear, singular focus: a developer
+  going all-in on building for Solana mobile — the Seeker and the dApp Store.
 - **Primary action:** understand the mission and connect / follow the build.
 
 ## Visual Direction: "Mobile-first Seeker"
@@ -34,7 +34,7 @@ itself reads like a preview of the kind of product the owner wants to build.
   soft outer glow on hover).
 - **Radius:** large rounded corners (16–24px) for the app/mobile feel.
 - **Type:** Inter for UI; a monospace accent (e.g. system mono stack) for
-  "system/dev" labels — a quiet nod to the mainframe roots.
+  "system/dev" labels (section tags, the `.skr` handle) to reinforce the builder feel.
 - **Effects:** gradient glow, pill-shaped tags, glowing CTA buttons.
 
 ## Information Architecture (top → bottom)
@@ -45,9 +45,10 @@ itself reads like a preview of the kind of product the owner wants to build.
    Seeker & Solana dApp Store. A **verified `.skr` handle chip** (`0xmattyic333.skr`)
    displayed as a glowing verified badge. Two CTAs: *View Work* / *Follow the build*.
    A **Seeker-style phone mockup** beside the copy showing a mini "app" of the owner.
-3. **The Mission** (replaces generic About) — mainframe→Web3 origin story +
-   a clear "what I'm building toward" statement. Building-in-public framing.
-   Honest, forward-looking tone (never claims Solana expertise).
+3. **The Mission** (replaces generic About) — why Solana mobile, and a clear
+   "what I'm building toward" statement for the Seeker & dApp Store.
+   Building-in-public framing. Honest, forward-looking tone (never claims Solana
+   expertise). Does not lean on a prior-career origin story.
 4. **The Stack** — two honest buckets:
    - *Shipping with* — React, TypeScript, Git, Vite, HTML/CSS, Python (real skills).
    - *Leveling up* — Rust, Anchor, Solana Mobile Stack, Web3.js / Solana Kit,
