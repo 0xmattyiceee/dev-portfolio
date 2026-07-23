@@ -1,0 +1,15 @@
+.wallet-connected {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+}
+
+.wallet-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--sol-green);
+  box-shadow: 0 0 10px var(--sol-green);
+}

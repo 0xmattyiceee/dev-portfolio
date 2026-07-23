@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
+import WalletButton from './WalletButton';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
           <span className="nav-toggle-bar" />
           <span className="nav-toggle-bar" />
         </button>
-        <a href="#contact" className="connect-pill" onClick={() => setMenuOpen(false)}>Connect</a>
+        <WalletButton />
       </div>
     </nav>
   );
