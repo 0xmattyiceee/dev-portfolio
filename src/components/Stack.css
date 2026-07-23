@@ -1,0 +1,77 @@
+.stack-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.stack-card {
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.stack-heading {
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.stack-sub {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--sol-green);
+  font-weight: 400;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  padding: 8px 15px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.chip-learning {
+  border-color: rgba(153, 69, 255, 0.4);
+  background: rgba(153, 69, 255, 0.08);
+}
+
+.credential {
+  margin-top: 42px;
+}
+
+.credential-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 22px;
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
+}
+
+.credential-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--glow);
+  border-color: var(--sol-purple);
+}
+
+.credential-badge img {
+  width: 170px;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+}

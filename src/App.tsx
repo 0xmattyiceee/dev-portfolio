@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
+import Mission from './components/Mission';
+import Stack from './components/Stack';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './styles/variables.css';
@@ -11,12 +12,16 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <About />
+        <Mission />
+        <Stack />
         <Projects />
         <Contact />
       </main>
-      <footer style={{ textAlign: 'center', padding: '40px 0', opacity: 0.5, fontSize: '0.8rem' }}>
-        &copy; {new Date().getFullYear()} Matthew Fair (0xmattyiceee). Built with React & Vite.
+      <footer className="site-footer">
+        <span className="footer-handle">0xmattyic333.skr</span>
+        <span>
+          &copy; {new Date().getFullYear()} · Building on Solana Mobile · Built with React &amp; Vite
+        </span>
       </footer>
     </div>
   );
