@@ -16,10 +16,10 @@ const projects: Project[] = [
     link: 'https://github.com/0xmattyiceee/zxplore',
   },
   {
-    title: 'Dev Portfolio',
+    title: 'Solana Seeker dApp-dev site',
     description:
-      'This site — a Solana-mobile-themed portfolio built with React, TypeScript, and Vite, shipped to production on GitHub Pages.',
-    tags: ['React', 'TypeScript', 'Vite'],
+      'This site — a Solana Mobile dApp with on-chain payments. Connect a Seeker vault or browser wallet and tip/pay in SOL, USDC, or SKR. Built with React, TypeScript, and Vite; live on mainnet.',
+    tags: ['React', 'TypeScript', 'Solana', 'Web3'],
     link: 'https://github.com/0xmattyiceee/dev-portfolio',
   },
   {

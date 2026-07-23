@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="phone-notch" />
           <div className="phone-screen">
             <div className="phone-statusbar">
-              <span>9:41</span>
+              <span>00:00</span>
               <span>◈ Seeker</span>
             </div>
             <div className="phone-profile">
