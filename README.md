@@ -1,6 +1,6 @@
-# Dev Portfolio
+# 0xmattyic333.skr — Solana Mobile Portfolio
 
-A modern, responsive portfolio website built with React, TypeScript, and Vite. This project showcases my professional journey, technical skills, and a curated selection of my latest work.
+A Solana-mobile-themed portfolio built with React, TypeScript, and Vite. It showcases my mission to build dApps for the Solana Seeker and the Solana dApp Store, my stack, and the projects I've shipped.
 
 ## 🚀 Features
 

@@ -4,16 +4,23 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <div className="contact-card">
-        <h2 className="section-title">Interested in working together?</h2>
+        <span className="section-tag">// let's connect</span>
+        <h2 className="section-title">Let's build on Solana.</h2>
         <p className="contact-description">
-          Whether you have a question or just want to say hi, my inbox is always open. 
-          I'm currently available for new opportunities and freelance work.
+          Building for the Seeker or the dApp Store, want to collaborate, or just
+          want to follow the build? My inbox and GitHub are open.
         </p>
+        <div className="contact-handle">0xmattyic333.skr</div>
         <div className="contact-actions">
-          <a href="mailto:abc0xmattyic333@gmail.com" className="btn btn-primary">Say Hello</a>
-          <div className="social-links">
-            <a href="https://github.com/0xmattyiceee" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
-          </div>
+          <a href="mailto:abc0xmattyic333@gmail.com" className="btn btn-primary">Say gm</a>
+          <a
+            href="https://github.com/0xmattyiceee"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </section>
