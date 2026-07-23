@@ -8,6 +8,7 @@ import './PayModal.css';
 type Status =
   | { kind: 'idle' }
   | { kind: 'sending' }
+  | { kind: 'confirming'; signature: string }
   | { kind: 'success'; signature: string }
   | { kind: 'error'; message: string };
 
@@ -56,9 +57,18 @@ const PayModal = ({ open, onClose }: Props) => {
     }
     try {
       setStatus({ kind: 'sending' });
-      const tx = await buildTransfer(connection, publicKey, token.mint, value);
-      const signature = await sendTransaction(tx, connection);
-      await connection.confirmTransaction(signature, 'confirmed');
+      const { transaction, blockhash, lastValidBlockHeight } = await buildTransfer(
+        connection,
+        publicKey,
+        token.mint,
+        value,
+      );
+      const signature = await sendTransaction(transaction, connection);
+      setStatus({ kind: 'confirming', signature });
+      await connection.confirmTransaction(
+        { signature, blockhash, lastValidBlockHeight },
+        'confirmed',
+      );
       setStatus({ kind: 'success', signature });
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Transaction failed.';
@@ -114,10 +124,14 @@ const PayModal = ({ open, onClose }: Props) => {
             />
             <button
               className="btn btn-primary pay-send"
-              disabled={status.kind === 'sending' || !token?.enabled}
+              disabled={status.kind === 'sending' || status.kind === 'confirming' || !token?.enabled}
               onClick={send}
             >
-              {status.kind === 'sending' ? 'Confirm in wallet…' : `Send ${amount || ''} ${symbol}`.replace(/\s+/g, ' ').trim()}
+              {status.kind === 'sending'
+                ? 'Confirm in wallet…'
+                : status.kind === 'confirming'
+                  ? 'Confirming…'
+                  : `Send ${amount || ''} ${symbol}`.replace(/\s+/g, ' ').trim()}
             </button>
             {status.kind === 'success' && (
               <p className="pay-status pay-success">
