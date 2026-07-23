@@ -50,7 +50,8 @@ itself reads like a preview of the kind of product the owner wants to build.
    Building-in-public framing. Honest, forward-looking tone (never claims Solana
    expertise). Does not lean on a prior-career origin story.
 4. **The Stack** — two honest buckets:
-   - *Shipping with* — React, TypeScript, Git, Vite, HTML/CSS, Python (real skills).
+   - *Shipping with* — React, TypeScript, Git, Vite, HTML/CSS, Python, Solidity
+     (real skills; Solidity signals existing smart-contract fluency).
    - *Leveling up* — Rust, Anchor, Solana Mobile Stack, Web3.js / Solana Kit,
      Mobile Wallet Adapter (currently learning).
    Includes the **IBM Z Xplore — Concepts verified badge** displayed at a large,
