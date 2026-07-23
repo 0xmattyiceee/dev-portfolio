@@ -90,6 +90,8 @@
 @media (max-width: 640px) {
   .nav-toggle {
     display: flex;
+    margin-left: auto;
+    margin-right: 14px;
   }
 
   .nav-links {

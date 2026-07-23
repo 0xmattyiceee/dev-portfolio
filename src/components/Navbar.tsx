@@ -24,7 +24,7 @@ const Navbar = () => {
         </ul>
         <button
           className="nav-toggle"
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((o) => !o)}
         >
