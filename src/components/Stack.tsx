@@ -1,7 +1,7 @@
 import './Stack.css';
 
-const shipping = ['React', 'TypeScript', 'Solidity', 'Python', 'HTML/CSS', 'Git', 'Vite'];
-const leveling = ['Rust', 'Anchor', 'Solana Mobile Stack', 'Solana Kit / web3.js', 'Mobile Wallet Adapter'];
+const shipping = ['React', 'TypeScript', 'JavaScript', 'C#', 'Python', 'Solidity', 'HTML/CSS', 'Git', 'Vite'];
+const leveling = ['Rust', 'Anchor', 'Solana Mobile Stack', 'Solana Kit / web3.js', 'Mobile Wallet Adapter', 'Clarity', 'Cadence', 'Move', 'Go', 'C++'];
 
 const Stack = () => {
   return (

@@ -12,7 +12,7 @@ const Contact = () => {
         </p>
         <div className="contact-handle">0xmattyic333.skr</div>
         <div className="contact-actions">
-          <a href="mailto:abc0xmattyic333@gmail.com" className="btn btn-primary">Say gm</a>
+          <a href="mailto:0xmattyiceee@gmail.com" className="btn btn-primary">Say gm</a>
           <a
             href="https://github.com/0xmattyiceee"
             target="_blank"

@@ -15,12 +15,13 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-content">
         <a href="#hero" className="logo">
-          mattyice<span className="logo-skr">.skr</span>
+          0xmattyic333<span className="logo-skr">.skr</span>
         </a>
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <li><a href="#mission" onClick={() => setMenuOpen(false)}>Mission</a></li>
           <li><a href="#stack" onClick={() => setMenuOpen(false)}>Stack</a></li>
           <li><a href="#projects" onClick={() => setMenuOpen(false)}>Work</a></li>
+          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
         <button
           className="nav-toggle"

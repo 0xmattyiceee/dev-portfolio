@@ -14,7 +14,8 @@ const Mission = () => {
         <p>
           I'm building in public — leveling up on Rust, Anchor, and the Solana
           Mobile Stack while shipping projects that prove I can take an idea from
-          zero to deployed. If it runs on-chain and lives on a phone, that's where
+          zero to deployed. I'm also exploring <strong>Unity</strong> to build games
+          for the dApp Store. If it runs on-chain and lives on a phone, that's where
           I want to be.
         </p>
       </div>
