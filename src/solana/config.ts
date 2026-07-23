@@ -2,13 +2,34 @@ import { clusterApiUrl, PublicKey } from '@solana/web3.js';
 
 export type NetworkName = 'devnet' | 'mainnet-beta';
 
-/** Flip to 'mainnet-beta' to go live. Only change needed. */
-export const ACTIVE_NETWORK: NetworkName = 'devnet';
+/** Flip between 'devnet' and 'mainnet-beta' to switch networks. */
+export const ACTIVE_NETWORK: NetworkName = 'mainnet-beta';
 
 /** Public receiving address for tips / payments. */
 export const RECIPIENT = new PublicKey('FHeetC3DwgnaPiePqWaGSC1PLneL4dYGtMfRiiVnmTkp');
 
-export const RPC_ENDPOINT = clusterApiUrl(ACTIVE_NETWORK);
+/**
+ * Optional Helius RPC key (set VITE_HELIUS_API_KEY in .env.local). When present,
+ * we use the Helius endpoint for the active network; otherwise we fall back to
+ * the rate-limited public cluster RPC.
+ *
+ * SECURITY: this is a client-side app, so the resolved RPC URL — including the
+ * key — is visible in the deployed bundle and network requests. Restrict the
+ * key to this site's origin in the Helius dashboard so it can't be reused
+ * elsewhere. The key itself lives only in .env.local (gitignored), never in
+ * committed source.
+ */
+const HELIUS_API_KEY = import.meta.env.VITE_HELIUS_API_KEY;
+
+function resolveRpcEndpoint(network: NetworkName): string {
+  if (HELIUS_API_KEY) {
+    const subdomain = (network as NetworkName) === 'mainnet-beta' ? 'mainnet' : 'devnet';
+    return `https://${subdomain}.helius-rpc.com/?api-key=${HELIUS_API_KEY}`;
+  }
+  return clusterApiUrl(network);
+}
+
+export const RPC_ENDPOINT = resolveRpcEndpoint(ACTIVE_NETWORK);
 
 /** Wallet Standard chain id (mainnet-beta maps to 'solana:mainnet'). */
 export const WALLET_STANDARD_CHAIN =
