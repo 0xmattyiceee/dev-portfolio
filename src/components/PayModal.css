@@ -1,0 +1,142 @@
+.pay-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(5, 5, 8, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.pay-modal {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background: #14141c;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  box-shadow: var(--glow);
+}
+
+.pay-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--text-muted);
+}
+
+.pay-close:hover {
+  color: var(--text-color);
+}
+
+.pay-title {
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+}
+
+.pay-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 22px;
+}
+
+.pay-connect {
+  width: 100%;
+}
+
+.pay-tokens {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.pay-token {
+  flex: 1;
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.pay-token.active {
+  border-color: var(--sol-purple);
+  box-shadow: var(--glow);
+}
+
+.pay-token:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  font-size: 0.72rem;
+}
+
+.pay-presets {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pay-preset {
+  flex: 1;
+  padding: 9px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  transition: var(--transition);
+}
+
+.pay-preset:hover {
+  color: var(--text-color);
+  border-color: var(--sol-purple);
+}
+
+.pay-amount {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.pay-amount:focus {
+  outline: none;
+  border-color: var(--sol-purple);
+}
+
+.pay-send {
+  width: 100%;
+}
+
+.pay-status {
+  margin-top: 16px;
+  font-size: 0.88rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+.pay-success {
+  color: var(--sol-green);
+}
+
+.pay-success a {
+  text-decoration: underline;
+}
+
+.pay-error {
+  color: #ff6b6b;
+}
